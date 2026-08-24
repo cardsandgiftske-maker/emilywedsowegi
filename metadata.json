@@ -1,0 +1,8 @@
+{
+  "name": "Emily and Owegi - Traditional Wedding",
+  "description": "Official Nyombo Ceremony invitation minisite for Emily \u0026 Owegi on October 10, 2026 at Gombe Komollo. Featuring live countdown, interactive RSVP, venue map, schedule, gifting, and guestbook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

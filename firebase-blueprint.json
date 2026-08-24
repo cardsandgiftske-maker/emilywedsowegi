@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "rsvps": {
+      "title": "RSVPs",
+      "description": "Wedding guest RSVP submissions",
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Full name of guest"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address"
+        },
+        "attending": {
+          "type": "string",
+          "enum": ["yes", "no"],
+          "description": "Attendance status"
+        },
+        "guestCount": {
+          "type": "integer",
+          "description": "Number of attendees"
+        },
+        "dietary": {
+          "type": "string",
+          "description": "Dietary requirements or special notes"
+        },
+        "message": {
+          "type": "string",
+          "description": "Congratulatory message for the couple"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of RSVP creation"
+        }
+      },
+      "required": ["fullName", "attending"]
+    },
+    "guestbook": {
+      "title": "Guestbook Messages",
+      "description": "Guestbook wishes and congratulations",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the sender"
+        },
+        "relationship": {
+          "type": "string",
+          "description": "Relationship to couple"
+        },
+        "message": {
+          "type": "string",
+          "description": "Warm wishes message"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of submission"
+        }
+      },
+      "required": ["name", "message"]
+    }
+  }
+}
+
